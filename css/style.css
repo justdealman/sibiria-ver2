@@ -45,6 +45,9 @@ body {
 	background:#ffffff;
 	-webkit-tap-highlight-color:transparent;
 }
+html * {
+	max-height:1000000px;
+}
 p {
 	text-indent:0;
 	padding:0;

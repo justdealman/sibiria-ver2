@@ -175,4 +175,12 @@
 			$(this).attr('placeholder', $(this).data('holder'));
 		});
 	});
+	$('.zoom').fancybox({
+		padding: 0,
+        helpers: {
+            overlay: {
+              locked: false
+            }
+        }
+	});
 });
