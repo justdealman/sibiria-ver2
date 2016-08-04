@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Сибирия</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1240, user-scalable=yes">
+	<!--<link href="./favicon.ico" rel="shortcut icon">-->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/jquery.js"></script>
+	<!--[if IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div>
+				<img src="./img/logo.png" width="350" height="73" class="logo" alt="">
+				<nav>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">жилая недвижимость</a></li>
+						<li><a href="#">коммерческая недвижимость</a></li>
+						<li><a href="#">акции</a></li>
+						<li><a href="#">новости</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+				</nav>
+				<div class="phones">
+					<h6>8 (3852)</h6>
+					<ul>
+						<li><a href="tel:+73852717000">717-000</a></li>
+						<li><a href="tel:+73852717317">717-317</a></li>
+					</ul>
+				</div>
+				<button>Задать вопрос</button>
+				<div class="search">
+					<input type="text" placeholder="Поиск по сайту">
+					<input type="submit" value="">
+				</div>
+			</div>
+		</header>
+		<div class="filter-b">
+			<ul class="core">
+				<li>
+					<p>Кол-во комнат</p>
+					<ul class="rooms">
+						<li><label><input type="checkbox">1</label></li>
+						<li><label><input type="checkbox">2</label></li>
+						<li><label><input type="checkbox">3</label></li>
+						<li><label><input type="checkbox">>4</label></li>
+					</ul>
+				</li>
+				<li>
+					<p>Площадь</p>
+					<input type="text" class="from">
+					<p>—</p>
+					<input type="text" class="to">
+					<p>кв.м</p>
+					<div class="slide" data-min="10" data-max="200" data-start="30" data-end="100" data-step="1"></div>
+				</li>
+				<li>
+					<p>Этаж</p>
+					<input type="text" class="from">
+					<p>—</p>
+					<input type="text" class="to">
+					<div class="slide" data-min="1" data-max="25" data-start="5" data-end="15" data-step="1"></div>
+				</li>
+			</ul>
+			<div class="controls">
+				<button>Найти</button>
+				<p><a href="#">Сбросить</a></p>
+			</div>
+		</div>
+		<div class="content-b">
+			<div class="lc">
+				<div class="group">
+					<h3>Новости</h3>
+					<ul>
+						<li>
+							<p><a href="#">Капиталист:Кирпич vs монолит. Качество или скорость?</a></p>
+							<h6>29.06.2016г.</h6>
+						</li>
+						<li>
+							<p><a href="#">Европланировка — современные решения в ЖК «Новая пристань»</a></p>
+							<h6>29.06.2016г.</h6>
+						</li>
+						<li>
+							<p><a href="#">В Алтайском крае при поддержке СК «Сибирия» состоятся сразу два крупных спортивных мероприятия.</a></p>
+							<h6>29.06.2016г.</h6>
+						</li>
+						<li>
+							<p><a href="#">Объекты СК «Сибирия» стали настоящим украшением исторического центра Барнаула</a></p>
+							<h6>29.06.2016г.</h6>
+						</li>
+					</ul>
+					<h5><a href="#">Все новости</a></h5>
+				</div>
+				<div class="group">
+					<h3>Акции</h3>
+					<ul>
+						<li>
+							<p><a href="#">Акция «Дешевле, чем ипотека!»</a></p>
+							<h6>29.06.2016г.</h6>
+						</li>
+						<li>
+							<p><a href="#">Акция «1+1=3»</a></p>
+							<h6>29.06.2016г.</h6>
+						</li>
+						<li>
+							<p><a href="#">Акция «Квадраты в подарок!»</a></p>
+							<h6>29.06.2016г.</h6>
+						</li>
+					</ul>
+					<h5><a href="#">Все акции</a></h5>
+				</div>
+				<div class="group">
+					<h3>О компании</h3>
+					<p>СК «Сибирия» - ведущий российский застройщик, который в 2016 году отметит 22 года успешной работы.</p>
+					<p>Компания специализируется на строительстве крупномасштабных жилых микрорайонов в Барнауле, полностью обеспеченных социальной и инженерной инфраструктурой для комфортной жизни, обучения и отдыха.</p>
+					<p>Последние годы «Сибирия» стабильно входит в тройку крупнейших компаний России в Алтайском крае.</p>
+					<h5><a href="#">Читать полностью</a></h5>
+				</div>
+				<div class="partners">
+					<h2>Банки-партнеры</h2>
+					<ul>
+						<li><img src="./img/vtb-icon.png" width="146" height="40" alt=""></li>
+						<li><img src="./img/akb-icon.png" width="144" height="68" alt=""></li>
+						<li><img src="./img/aik-icon.png" width="145" height="40" alt=""></li>
+						<li><img src="./img/rsb-icon.png" width="145" height="36" alt=""></li>
+						<li><img src="./img/gasprom-icon.png" width="143" height="30" alt=""></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rc">
+				<h1>Гоголя, 66</h1>
+				<h6 class="progress-status done">Дом сдан</h6>
+				<div class="gallery-m">
+					<div class="big">
+						<a href="#" data-b="1">
+							<img src="./pic/b-1.jpg" width="312" height="250" class="img-bg" alt="">
+						</a>
+						<a href="#" data-b="2">
+							<img src="./pic/b-2.jpg" width="312" height="250" class="img-bg" alt="">
+						</a>
+						<a href="#" data-b="3">
+							<img src="./pic/b-1.jpg" width="312" height="250" class="img-bg" alt="">
+						</a>
+						<a href="#" data-b="4">
+							<img src="./pic/b-2.jpg" width="312" height="250" class="img-bg" alt="">
+						</a>
+						<a href="#" data-b="5">
+							<img src="./pic/b-1.jpg" width="312" height="250" class="img-bg" alt="">
+						</a>
+						<a href="#" data-b="6">
+							<img src="./pic/b-2.jpg" width="312" height="250" class="img-bg" alt="">
+						</a>
+					</div>
+					<ul class="small">
+						<li data-s="1"><img src="./pic/p-1.jpg" width="105" height="83" class="img-bg" alt=""></li>
+						<li data-s="2"><img src="./pic/p-2.jpg" width="105" height="83" class="img-bg" alt=""></li>
+						<li data-s="3"><img src="./pic/p-3.jpg" width="105" height="83" class="img-bg" alt=""></li>
+						<li data-s="4"><img src="./pic/p-1.jpg" width="105" height="83" class="img-bg" alt=""></li>
+						<li data-s="5"><img src="./pic/p-2.jpg" width="105" height="83" class="img-bg" alt=""></li>
+						<li data-s="6"><img src="./pic/p-3.jpg" width="105" height="83" class="img-bg" alt=""></li>
+					</ul>
+				</div>
+				<div class="about-o">
+					<p>15-ти этажный одноподъездный кирпичный жилой дом повышенной комфортности с 2-х этажной подземной автостоянкой.</p>
+					<h5>Консультации по телефонам</h5>
+					<button>Задать вопрос</button>
+					<ul>
+						<li>8 (3852) 71-70-00</li>
+						<li>8 (3852) 71-73-17</li>
+					</ul>
+				</div>
+				<div class="object-b">
+					<ul class="nav">
+						<li><a href="#">Информация о доме</a></li>
+						<li class="active"><a href="#">Планировки</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Этапы строительства</a></li>
+						<li><a href="#">Ген. план</a></li>
+						<li><a href="#">Дизайн и интерьер</a></li>
+					</ul>
+					<div class="tab">
+						<div class="object floor">
+							<div class="level1">
+								<h4>Блок секция №1</h4>
+								<div id="building_6_5">
+									<img src="./cover/building_6_5.png" width="553" height="413" class="cover" alt="">
+									<div class="tooltip apartment1">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>60.49 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment2">
+										<p>Количество комнат: <strong>1</strong></p>
+										<p>Общая площадь: <strong>33.33 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment3">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>65.4 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment4">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>76.57 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment5">
+										<p>Количество комнат: <strong>1</strong></p>
+										<p>Общая площадь: <strong>45.98 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment6">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>53.59 м<sup>2</sup></strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="level2">
+								<h4>Блок секция №2</h4>
+								<div id="building_6_4">
+									<img src="./cover/building_6_4.png" width="562" height="413" class="cover" alt="">
+									<div class="tooltip apartment1">
+										<p>Количество комнат: <strong>3</strong></p>
+										<p>Общая площадь: <strong>88.83 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment2">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>82.55 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment3">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>58.86 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment4">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>60.14 м<sup>2</sup></strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="level3">
+								<h4>Блок секция №3</h4>
+								<div id="building_6_2">
+									<img src="./cover/building_6_2.png" width="534" height="413" class="cover" alt="">
+									<div class="tooltip apartment1">
+										<p>Количество комнат: <strong>3</strong></p>
+										<p>Общая площадь: <strong>88.83 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment2">
+										<p>Количество комнат: <strong>3</strong></p>
+										<p>Общая площадь: <strong>88.54 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment3">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>58.86 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment4">
+										<p>Количество комнат: <strong>1</strong></p>
+										<p>Общая площадь: <strong>39.16 м<sup>2</sup></strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="level4">
+								<h4>Блок секция №4</h4>
+								<div id="building_6_3">
+									<img src="./cover/building_6_3.png" width="534" height="413" class="cover" alt="">
+									<div class="tooltip apartment1">
+										<p>Количество комнат: <strong>1</strong></p>
+										<p>Общая площадь: <strong>44.69 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment2">
+										<p>Количество комнат: <strong>3</strong></p>
+										<p>Общая площадь: <strong>88.13 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment3">
+										<p>Количество комнат: <strong>2</strong></p>
+										<p>Общая площадь: <strong>63.85 м<sup>2</sup></strong></p>
+									</div>
+									<div class="tooltip apartment4">
+										<p>Количество комнат: <strong>1</strong></p>
+										<p>Общая площадь: <strong>39.16 м<sup>2</sup></strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="download">
+							<button>Скачать планировки</button>
+						</div>
+						<div class="more">
+							<h2>Квартиры:</h2>
+							<div class="table">
+								<table>
+									<thead>
+										<tr>
+											<th>Этаж</th>
+											<th>Комнат</th>
+											<th>Общая площадь</th>
+											<th>Цена за кв.м. руб.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>1</td>
+											<td><strong>19,52</strong></td>
+											<td>45 000</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>1</td>
+											<td><strong>22,20</strong></td>
+											<td>45 000</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>2</td>
+											<td><strong>50,43</strong></td>
+											<td>42 000</td>
+										</tr>
+										<tr>
+											<td>14</td>
+											<td>3</td>
+											<td><strong>75,00</strong></td>
+											<td>39 000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<h5>Купить квартиру в этом доме можно по следующим схемам:</h5>
+							<ul>
+								<li>За полный наличный расчет</li>
+								<li>С рассрочкой платежа</li>
+								<li>С привлечением ипотечного кредитования</li>
+								<li>С использованием средств материского капитала</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<h2>Новости объекта</h2>
+				<ul class="news-b">
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+					<li>
+						<h4><a href="#">Началось строительство очередного дома ЖК «Новая пристань»</a></h4>
+						<h6>29.06.2016г.</h6>
+					</li>
+				</ul>
+				<h2>Расположение</h2>
+				<div class="location-e">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=du5dUZ83ijYm1DIAhxuWlny_aLEv8_ye&amp;width=100%&amp;height=502&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				</div>
+			</div>
+		</div>
+		<div class="ask-more">
+			<h3>Узнайте больше у специалистов СК Сибирия</h3>
+			<input type="text" placeholder="Имя">
+			<input type="text" placeholder="Телефон">
+			<textarea cols="80" rows="4" placeholder="Сообщение"></textarea>
+			<button>Задать вопрос</button>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<footer>
+		<p class="copy">© СК Сибирия</p>
+		<p class="author">Разработка сайта - <a href="http://letsrock.pro" target="_blank"><img src="./img/letsrock-logo.png" width="61" height="15" alt=""></a>
+	</footer>
+	<div class="special-e">
+		<span class="close"></span>
+		<div>
+			<p>Акция:<br> <a href="#">«Дешевле, чем ипотека!»</a></p>
+		</div>
+	</div>
+	<script src="./js/easing.js"></script>
+	<script src="./js/jcarousel.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/jscrollpane.js"></script>
+	<script src="./js/maps.js"></script>
+	<script src="./js/mousewheel.js"></script>
+	<script src="./js/raphael.js"></script>
+	<script src="./js/uniform.js"></script>
+	<script src="./js/dynamic.js"></script>
+</body>
+</html>

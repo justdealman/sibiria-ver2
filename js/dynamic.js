@@ -84,4 +84,95 @@
 		e.preventDefault();
 		$(this).parents('.gallery-m').find('[data-b="'+$(this).attr('data-s')+'"]').stop().fadeIn(200).siblings('[data-b]').fadeOut();
 	}).filter(':first').click();
+	$('.tooltip').each(function() {
+		$(this).append('<span class="close"></span>');
+	});
+	$('.object-b .news .list ul li').on('click', function(e) {
+		e.preventDefault();
+		$(this).addClass('active').siblings().removeClass('active');
+		var pic = $(this).parents('.news').find('.pic');
+		$(this).parents('.news').find('.pic').css({
+			'background': 'url("'+$(this).attr('data-img-src')+'") no-repeat center center',
+			'background-size': 'cover'
+		});
+	}).filter(':first').click();
+	$('.object-b .news .list').jScrollPane({
+		autoReinitialise: true,
+		verticalGutter: 8,
+	});
+	$('.floor > div > div').each(function() {
+		var cover = $(this).find('.cover');
+		var w = cover.width(); 
+		var h = cover.height(); 
+		var src = cover.attr('src');
+		cover.hide();
+		$(this).css({'background-image': 'url('+src+')'});
+		$(this).width(w);
+		$(this).height(h);
+		var ooo = $(this).attr('id');
+		var r = Raphael(ooo, w, h), attributes = {
+			fill: '#ffffff',
+			opacity: '0',
+			stroke: '#3899E6',
+			'stroke-width': 0,
+			'stroke-linejoin': 'round'
+		},
+		arr = new Array();
+		for (var apartment in eval(ooo)) {
+			var obj = r.path(eval(ooo)[apartment].path);
+			obj.attr(attributes);
+			arr[obj.id] = apartment;
+			obj.hover(function(){
+				this.stop(true, true).animate({
+					fill: '#ffffff',
+					opacity: '0.75'
+				}, 250);
+				this.attr({'cursor':'pointer'});
+			}, function(){
+				this.stop(true, true).animate({
+					fill: attributes.fill,
+					opacity: attributes.opacity
+				}, 250);
+				this.attr({'cursor':'default'});
+			}).click(function(){
+				$('.tooltip').hide();
+				$('#'+ooo).parent('div').css({
+					'z-index': '1'
+				}).siblings().css({
+					'z-index': '0'
+				});
+				var currentapartment = arr[this.id];
+				$('#'+ooo).children('div').fadeOut(150);
+				var bbox = this.getBBox();
+				$('#'+ooo).find('.'+currentapartment).css({'left': (bbox.width/2)+bbox.x+'px', 'top': (bbox.height/2)+bbox.y+'px'});
+				$('#'+ooo).find('.'+currentapartment).stop(true, true).fadeIn(150);
+				$('#'+ooo).find('.'+currentapartment+' .close').bind('click', function() {
+					$(this).parent().stop(true, true).fadeOut(150);
+					return false;
+				});
+				return false;
+			});
+		}
+	});
+	$(document).mouseup(function(e) {
+		var tooltip = $('.tooltip');
+		if ( !tooltip.is(e.target) && tooltip.has(e.target).length === 0 ) {
+			tooltip.hide();
+		}
+	});
+	$('.floor > div > div').each(function() {
+		$(this).css({
+			'-webkit-transform': 'scale('+395/$(this).find('.cover').attr('width')+')',
+			'transform': 'scale('+395/$(this).find('.cover').attr('width')+')'
+		});
+	});
+	$('input, textarea').each(function() {
+		$(this).data('holder', $(this).attr('placeholder'));
+		$(this).focusin(function() {
+			$(this).attr('placeholder', '');
+		});
+		$(this).focusout(function() {
+			$(this).attr('placeholder', $(this).data('holder'));
+		});
+	});
 });
