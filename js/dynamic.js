@@ -175,6 +175,28 @@
 			$(this).attr('placeholder', $(this).data('holder'));
 		});
 	});
+	$('[data-open]').on('click', function(e) {
+		e.preventDefault();
+		if ( !$(this).hasClass('disabled') > 0 ) {
+			$('.filter-opened').stop().slideUp(200);
+			$('.search-result').stop().slideUp(200);
+			$('.search-p .user input[type="text"]').removeClass('found');
+			$('.lk-drop').stop().slideUp(250);
+			var t = $('.modal[data-target="'+$(this).attr('data-open')+'"]');
+			$('.fade').stop(true,true).fadeIn(500);
+			var h = $(window).scrollTop()+($(window).height()-t.outerHeight())/2;
+			if ( h < $(window).scrollTop()+40 ) {
+				h = $(window).scrollTop()+20;
+			}
+			t.css({
+				'top': h+'px'
+			}).stop(true,true).fadeIn(500);
+		}
+	});
+	$('.fade, .modal .close').on('click', function(e) {
+		e.preventDefault();
+		$('.fade, .modal').stop(true,true).fadeOut(500);
+	});
 	$('.zoom').fancybox({
 		padding: 0,
         helpers: {

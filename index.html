@@ -33,7 +33,7 @@
 						<li><a href="tel:+73852717317">717-317</a></li>
 					</ul>
 				</div>
-				<button>Задать вопрос</button>
+				<button data-open="ask">Задать вопрос</button>
 				<div class="search">
 					<input type="text" placeholder="Поиск по сайту">
 					<input type="submit" value="">
@@ -295,6 +295,15 @@
 		<div>
 			<p>Акция:<br> <a href="#">«Дешевле, чем ипотека!»</a></p>
 		</div>
+	</div>
+	<div class="fade"></div>
+	<div class="modal" data-target="ask">
+		<span class="close"></span>
+		<h4>Узнайте больше у специалистов СК Сибирия</h4>
+		<p><input type="text" placeholder="Имя"></p>
+		<p><input type="text" placeholder="Телефон"></p>
+		<p><textarea cols="60" rows="4" placeholder="Сообщение"></textarea></p>
+		<button>Задать вопрос</button>
 	</div>
 	<script src="./js/easing.js"></script>
 	<script src="./js/jcarousel.js"></script>

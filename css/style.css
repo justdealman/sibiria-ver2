@@ -1532,3 +1532,83 @@ footer .author img {
 	padding-left:20px;
 	border-left-width:0;
 }
+.fade {
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	background:url('../img/fade-bg.png') repeat;
+}
+.modal {
+	display:none;
+	position:absolute;
+	left:50%;
+	top:0;
+	z-index:1010;
+	width:476px;
+	text-align:center;
+	padding:50px 80px 50px;
+	margin-left:-318px;
+	background:#ffffff;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.modal h4 {
+	font-size:30px;
+	line-height:36px;
+	font-weight:500;
+	padding:0;
+	margin:0 0 20px;
+}
+.modal p {
+	width:400px;
+	margin:0 auto 14px;
+}
+.modal p input {
+	width:100%;
+	font-size:13px;
+	padding:11px 30px;
+	background:#ffffff;
+	border:1px solid #e3e8f0;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}
+.modal p textarea {
+	width:100%;
+	font-size:13px;
+	padding:11px 30px;
+	margin:0 0 -4px;
+	background:#ffffff;
+	border:1px solid #e3e8f0;
+	-webkit-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	resize:vertical;
+}
+.modal button {
+	width:400px;
+	color:#343e5c;
+	font-size:10px;
+	line-height:13px;
+	font-weight:500;
+	text-transform:uppercase;
+	cursor:pointer;
+	padding:13px 28px 14px;
+	margin:0 auto 14px;
+	background:#ffdf00;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+}
+.modal .close {
+	position:absolute;
+	right:20px;
+	top:10px;
+	display:block;
+	width:55px;
+	height:55px;
+	cursor:pointer;
+	background:url('../img/modal-close.png') no-repeat center center;
+}
