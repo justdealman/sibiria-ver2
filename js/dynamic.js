@@ -93,7 +93,7 @@
 		var pic = $(this).parents('.news').find('.pic');
 		$(this).parents('.news').find('.pic').css({
 			'background': 'url("'+$(this).attr('data-img-src')+'") no-repeat center center',
-			'background-size': 'cover'
+			'background-size': 'contain'
 		});
 	}).filter(':first').click();
 	$('.object-b .news .list').jScrollPane({
