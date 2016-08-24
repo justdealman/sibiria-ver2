@@ -683,7 +683,16 @@ header .search input[type="submit"] {
 	-webkit-border-radius:4px;
 	border-radius:4px;
 }
-.banner-b:after {
+.banner-b .temp {
+	display:none;
+}
+.banner-b .container, .banner-b  .container > div > div {
+	position:relative;
+	height:407px;
+	clear:both;
+	overflow:hidden;
+}
+.banner-b  .container > div > div:after {
 	content:'';
 	position:absolute;
 	left:0;
@@ -692,7 +701,35 @@ header .search input[type="submit"] {
 	height:100%;
 	background:rgba(0,0,0,0.4);
 }
-.banner-b div {
+.banner-b .prev, .banner-b .next {
+	position:absolute;
+	top:50%;
+	z-index:10;
+	display:block;
+	width:40px;
+	height:40px;
+	margin:-21px 0 0;
+	border:1px solid transparent;
+}
+.banner-b .prev {
+	left:0;
+	background:url('../img/slider-arrows.png') no-repeat left top;
+	border-left-width:0;
+	-webkit-border-radius:0 10px 10px 0;
+	border-radius:0 10px 10px 0;
+}
+.banner-b .next {
+	right:0;
+	background:url('../img/slider-arrows.png') no-repeat right top;
+	border-right-width:0;
+	-webkit-border-radius:10px 0 0 10px;
+	border-radius:10px 0 0 10px;
+}
+.banner-b .prev:hover, .banner-b .next:hover {
+	background-color:rgba(255,255,255,0.1);
+	border-color:#ffffff;
+}
+.banner-b .info {
 	position:absolute;
 	left:110px;
 	top:50%;
@@ -1924,6 +1961,9 @@ header nav ul li:last-child {
 	.banner-b {
 		height:307px;
 	}
+	.banner-b .container, .banner-b  .container > div > div {
+		height:307px;
+	}
 	.filter-b h4 {
 		display:block;
 		font-size:15px;
@@ -1950,11 +1990,14 @@ header nav ul li:last-child {
 	.banner-b {
 		height:250px;
 	}
+	.banner-b .container, .banner-b .container > div > div {
+		height:250px;
+	}
 	.banner-b h3 {
 		font-size:24px;
 		line-height:28px;
 	}
-	.banner-b div {
+	.banner-b .info {
 		left:50%;
 		width:360px;
 		margin-left:-180px;
