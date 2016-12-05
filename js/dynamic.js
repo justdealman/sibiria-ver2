@@ -241,12 +241,16 @@ $(function() {
 		});
 	}
 	function zoomLevel() {
-		var ratio = 413/534;
 		$('.floor > div > div').each(function() {
 			$(this).css({
 				'-webkit-transform': 'scale('+$(this).parent().width()/$(this).find('.cover').attr('width')+')',
 				'transform': 'scale('+$(this).parent().width()/$(this).find('.cover').attr('width')+')'
 			});
+			if ( !$(this).hasClass('tall') ) {
+				var ratio = 413/534;
+			} else {
+				var ratio = 536/527;	
+			}
 			$(this).parent().css({
 				'height': $(this).parent().width()*ratio+80+'px'
 			});
